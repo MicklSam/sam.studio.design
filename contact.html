@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - SAM STUDIO DESIGN</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">SAM STUDIO</a>
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="info.html">INFO</a>
+        <a href="contact.html" class="active">CONTACT</a>
+        <button class="nav-btn" aria-label="Search"><svg class="icon" viewBox="0 0 24 24" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+        <button class="nav-btn nav-menu-btn" id="menuBtn" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+      <button class="nav-menu-btn" id="menuBtnMobile" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">HOME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="info.html">INFO</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </div>
+  </nav>
+
+  <main class="page-header">
+    <section class="section section-white">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <h1 style="font-size:clamp(3rem,6vw,4.5rem); font-weight:700; letter-spacing:-0.02em; margin-bottom:3rem;">GET IN TOUCH</h1>
+            <p style="font-size:1.25rem; line-height:1.6; opacity:0.7; margin-bottom:4rem;">We welcome inquiries about collaborations, project opportunities, and general questions. Our team will respond within 48 hours.</p>
+
+            <div class="contact-info-item">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <h3>STUDIO ADDRESS</h3>
+                <p>123 Architecture Avenue<br>New York, NY 10013<br>United States</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <h3>PHONE</h3>
+                <p><a href="tel:+12125551234">+1 212 555 1234</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <h3>EMAIL</h3>
+                <p>
+                  <a href="mailto:hello@samstudio.com">hello@samstudio.com</a><br>
+                  <a href="mailto:careers@samstudio.com">careers@samstudio.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-hours">
+              <h3>OFFICE HOURS</h3>
+              <p>Monday – Friday: 9:00 AM – 6:00 PM EST<br>Saturday – Sunday: Closed</p>
+            </div>
+          </div>
+
+          <div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">FIRST NAME *</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">LAST NAME *</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">EMAIL ADDRESS *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="company">COMPANY / ORGANIZATION</label>
+                <input type="text" id="company" name="company" />
+              </div>
+              <div class="form-group">
+                <label for="projectType">PROJECT TYPE</label>
+                <select id="projectType" name="projectType">
+                  <option value="">Select project type</option>
+                  <option value="residential">Residential</option>
+                  <option value="commercial">Commercial</option>
+                  <option value="cultural">Cultural</option>
+                  <option value="hospitality">Hospitality</option>
+                  <option value="mixed-use">Mixed-Use</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">MESSAGE *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="submit-btn">SUBMIT INQUIRY</button>
+              </div>
+              <p class="privacy">By submitting this form, you agree to our privacy policy. We will never share your information with third parties.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-map">
+      <div class="contact-map-placeholder">
+        <svg class="icon" viewBox="0 0 24 24" width="48" height="48"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <p class="title">MAP INTEGRATION</p>
+        <p class="addr">123 Architecture Avenue, New York, NY 10013</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>STUDIO</h3>
+          <p>SAM STUDIO DESIGN</p>
+          <p>123 Architecture Avenue<br>New York, NY 10013<br>United States</p>
+          <p style="margin-top:1.5rem"><a href="tel:+12125551234">+1 212 555 1234</a><br><a href="mailto:hello@samstudio.com">hello@samstudio.com</a></p>
+        </div>
+        <div>
+          <h3>QUICK LINKS</h3>
+          <nav class="links">
+            <a href="projects.html">Projects</a>
+            <a href="info.html">Info</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+          </nav>
+        </div>
+        <div>
+          <h3>CONNECT</h3>
+          <div class="social">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" width="18" height="18"><path d="M7 8c-2.2 0-4 1.8-4 4s1.8 4 4 4c2.1 0 4-1.8 4-4V6h6v2"/><path d="M17 12c0 2.2 1.8 4 4 4"/><path d="M15 6h6"/></svg> Behance</a>
+          </div>
+        </div>
+        <div>
+          <h3>NEWSLETTER</h3>
+          <p>Subscribe to receive our latest projects and insights.</p>
+          <form class="footer-newsletter">
+            <input type="email" placeholder="Your email address" />
+            <button type="submit">SUBSCRIBE →</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SAM STUDIO DESIGN. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your inquiry. We will respond within 48 hours.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
